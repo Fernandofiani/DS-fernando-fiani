@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
  */
-package aulajavaexercicios;
+package Exercicios_variaveis;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author joaod
  */
-public class EX20 {
+public class Exercicio_20 {
 
     /**
      * @param args the command line arguments

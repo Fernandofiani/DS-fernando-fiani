@@ -14,27 +14,18 @@ public class Exercício_18 {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        Scanner Dados = new Scanner(System.in);
-        
-        System.out.println("Informe seu sexo:\nMasculino\nFeminino");
-        String Sexo = Dados.nextLine();
-        
-        System.out.println("Informe, em centímetros, a sua altura:");
-        int Altura = Dados.nextInt();
-        
-        System.out.println("Informe seu nome:");
-        String Nome = Dados.nextLine();
-        
-        float Altura_Metros = Altura/100;
-        if (Sexo == "Masculino" || Sexo == "masculino"){
-            float Peso_Ideal =(72.7f * Altura_Metros)-58;
-            System.out.println(Nome +" o seu peso ideal é :"+ Peso_Ideal);
-        }
-        else{
-            float Peso_Ideal = (62.1f * Altura_Metros)-44.7f;
-            System.out.println(Nome+" o seu peso ideal é :"+ Peso_Ideal);
-        }
-
         // TODO code application logic here
+        Scanner Numero = new Scanner(System.in);
+        System.out.println("Informe seu salário:");
+        float Salario_Fixo = Numero.nextInt();
+        System.out.println("Informe agora, a comissão por carro vendido:");
+        float Comissao = Numero.nextInt();
+        System.out.println("Informe agora a quantidade de carros vendidos:");
+        int Quantidade_Carros_Vendidos = Numero.nextInt();
+        System.out.println("Informe o valor total de suas vendas:");
+        float Total_Vendas = Numero.nextInt();
+        float Porcentagem_Total_Vendas = Total_Vendas*0.05f;
+        float Salario_Total = (Comissao*Quantidade_Carros_Vendidos) + Porcentagem_Total_Vendas +Salario_Fixo;
+        System.out.println("O salário total foi de R$"+Salario_Total);
     }
 }

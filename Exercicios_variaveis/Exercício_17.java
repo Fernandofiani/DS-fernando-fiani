@@ -14,18 +14,14 @@ public class Exercício_17 {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        // TODO code application logic here
         Scanner Numero = new Scanner(System.in);
-        System.out.println("Informe seu salário:");
-        float Salario_Fixo = Numero.nextInt();
-        System.out.println("Informe agora, a comissão por carro vendido:");
-        float Comissao = Numero.nextInt();
-        System.out.println("Informe agora a quantidade de carros vendidos:");
-        int Quantidade_Carros_Vendidos = Numero.nextInt();
-        System.out.println("Informe o valor total de suas vendas:");
-        float Total_Vendas = Numero.nextInt();
-        float Porcentagem_Total_Vendas = Total_Vendas*0.05f;
-        float Salario_Total = (Comissao*Quantidade_Carros_Vendidos) + Porcentagem_Total_Vendas +Salario_Fixo;
-        System.out.println("O salário total foi de R$"+Salario_Total);
+        System.out.println("Informe o preço de fábrica do carro:");
+        float Preço_Fabrica = Numero.nextInt();
+        float Imposto = Preço_Fabrica*0.45f;
+        float Preço_Distribuidor = Preço_Fabrica*0.28f;
+        
+        float Preço_Final = Preço_Fabrica + Imposto + Preço_Distribuidor;
+        System.out.println("O preço que o cliente irá pagar será de R$"+Preço_Final);
+        // TODO code application logic here
     }
 }

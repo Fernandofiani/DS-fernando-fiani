@@ -8,20 +8,33 @@
  * @author felip
  */
 import java.util.Scanner;
-public class Exercício_15 {
+public class Exercício_15
+{
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        Scanner Numero = new Scanner (System.in);
-        System.out.println("Informe o custo de fábrica do carro:");
-        float Preço_Fabrica_Carro = Numero.nextInt();
-        float Imposto = Preço_Fabrica_Carro*0.45f;
-        float Percentual_Distribuidor = Preço_Fabrica_Carro*0.28f;
-        float Preço_Total = Preço_Fabrica_Carro + Imposto + Percentual_Distribuidor;
-        System.out.println("O custo total para o consumidor é de R$"+Preço_Total);
+        Scanner Numero = new Scanner(System.in);
+        System.out.println("Informe o salário do funcionário:");
+        float Salario_Funcionario = Numero.nextInt();
+        System.out.println("Informe o percentual do reajuste:");
+        float Percentual_Reajuste = Numero.nextInt();
+        System.out.println("O reajuste é um aumento ou diminuição?\n1)Aumento\n2)Diminuição");
+        int Escolha = Numero.nextInt();
         
-        // TODO code application logic here
+        float Reajuste = Salario_Funcionario*Percentual_Reajuste/100;
+        
+        if (Escolha == 1){
+            float Salario_Final = Salario_Funcionario + Reajuste;
+            System.out.println("O salario do funcionario irá aumentar para R$"+Salario_Final);
+        }
+        
+        else{
+            float Salario_Final = Salario_Funcionario - Reajuste;
+            System.out.println("O salario do funcionario irá diminuir para R$"+Salario_Final);
+        }
+       
+                // TODO code application logic here
     }
 }
