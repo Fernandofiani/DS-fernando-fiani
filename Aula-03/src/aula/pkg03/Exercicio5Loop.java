@@ -25,8 +25,10 @@ public class Exercicio5Loop {
             System.out.println("Alguma das notas inseridas é invalida");
         }
         System.out.println("'NOVO CÁLCULO (S/N)?'");
-        int novo_calculo = entrada.nextInt();
-       
+        char novo_calculo = entrada.next().toUpperCase().charAt(0);
+        while(novo_calculo = "S")
+       {
+           
+       }
     }
-            
 }
