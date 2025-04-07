@@ -20,7 +20,7 @@ public class Exercicio18 {
         System.out.println("informe a quantidade de numeros que voce deseja imprimir");
         int numero_infor = entrada.nextInt();
         int maior_n = 0;
-        int menor_n = 1000;
+        int menor_n = Integer.MAX_VALUE;
         int soma = 0;
         for(int i = 1;i<=numero_infor;i++)
         {
