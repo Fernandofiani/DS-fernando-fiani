@@ -8,27 +8,41 @@
  * @author CAMARGO
  */
 import java.util.Scanner;
-public class EX4 {
+public class EX12 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         System.out.println("quantos vetores voce deseja?");
         int variavel = entrada.nextInt();
         int[] n = new int[variavel];
-        for (int i = variavel-1;i >= 0; i--)
+        
+        float soma_n = 0;
+        float media_n;
+        System.out.println("me diga um numero");
+        for (int i = 0; i < n.length;i++)
         {
-            System.out.println("me diga um numero");
             n[i] = entrada.nextInt(); 
             
+          
         }
-        for(int j = 0; j <n.length; j ++)
+        for(int j=0;j<n.length;j++)
         {
-            System.out.println(n[j]);
+            soma_n = n[j]+soma_n;
+            
         }
+        media_n = soma_n/n.length;
+        System.out.println("a media é "+media_n);
+        for (int e = 0;e < n.length;e++)
+        {
+            if (n[e] > media_n)
+            {
+                System.out.println("o numero "+n[e]+" e maior que a media");
+            }
+        }
+        
     }
 }

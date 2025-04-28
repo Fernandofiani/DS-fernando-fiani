@@ -8,7 +8,7 @@
  * @author CAMARGO
  */
 import java.util.Scanner;
-public class EX6 {
+public class EX10 {
 
     /**
      * @param args the command line arguments
@@ -16,16 +16,22 @@ public class EX6 {
     public static void main(String args[]) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-       int[] n = {1,2,3,4,5,6,7,8,9,10};
+        System.out.println("quantos vetores voce deseja?");
+        int variavel = entrada.nextInt();
+        int[] n = new int[variavel];
+        System.out.println("me diga um numero");
         for (int i = 0; i < n.length;i++)
         {
-            if(i%2==0){
-                i=i+1;
-                System.out.println("posiçao no vetor: par "+ i +" | numeros pares: "+n[i]);
-            } 
-            
+            n[i] = entrada.nextInt(); 
+            if(n[i]< 0)
+            {
+                n[i] = 0;
+            }
+          
         }
-        
+        for(int j = 0; j < n.length;j++)
+        {
+            System.out.println(n[j]);
         }
     }
-
+}

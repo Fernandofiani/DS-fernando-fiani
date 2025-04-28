@@ -8,27 +8,33 @@
  * @author CAMARGO
  */
 import java.util.Scanner;
-public class EX4 {
+public class EX18{
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         System.out.println("quantos vetores voce deseja?");
         int variavel = entrada.nextInt();
         int[] n = new int[variavel];
-        for (int i = variavel-1;i >= 0; i--)
+        for (int d = 0;d < n.length;d++)
         {
             System.out.println("me diga um numero");
-            n[i] = entrada.nextInt(); 
-            
+            n[d] = entrada.nextInt(); 
         }
-        for(int j = 0; j <n.length; j ++)
+        int x = n[variavel-1];
+        for (int i = n.length-1;i != 0; i--)
         {
-            System.out.println(n[j]);
+            
+            n[i]= n[i-1];
         }
+        n[0] = x;
+        for (int e = 0;e<n.length;e++)
+        {
+            System.out.println(n[e]);
+        }
+        
     }
 }
