@@ -16,7 +16,7 @@ public class EX15 {
     public static void main(String args[]) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-       int[] n = new int [10];
+       int[] n = new int [20];
         for (int i = 0; i < n.length;i++)
         {
             n[i] = entrada.nextInt();
