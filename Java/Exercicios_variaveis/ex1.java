@@ -8,7 +8,7 @@ package Exercicios_variaveis;
  *
  * @author CAMARGO
  */
-public class AulaJavaExercicios {
+public class ex1 {
 
     /**
      * @param args the command line arguments
@@ -18,21 +18,21 @@ public class AulaJavaExercicios {
         int numero1 = 20;
         int numero2 = 10;
         int resultadosoma;
-        int resultadosubtração;
-        int resultadomultiplicação;
-        int resultadodivisão;
+        int resultadosub;
+        int resultadomult;
+        int resultadodiv;
         resultadosoma = numero1 + numero2;
         System.out.println("Programa para soma, subtração, divisao e multiplicação");
         System.out.println("O Resultado é da soma é "+resultadosoma);
         
         resultadosub = numero2 - numero1;
-        System.out.println("O resultado da subtração é "+resultadosubtração);
+        System.out.println("O resultado da subtração é "+resultadosub);
         
         resultadomult = numero1 * numero2;
-        System.out.println("O Resultado da multiplicação é "+resultadomultiplicação);
+        System.out.println("O Resultado da multiplicação é "+resultadomult);
         
         resultadodiv = numero1 / numero2;
-        System.out.println("O Resultado da divisão é"+resultadodivisão);
+        System.out.println("O Resultado da divisão é"+resultadodiv);
         
     }
     

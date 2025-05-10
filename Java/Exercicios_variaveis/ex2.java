@@ -8,7 +8,7 @@ package Exercicios_variaveis;
  *
  * @author CAMARGO
  */
-public class exercicio2 {
+public class ex2 {
     public static void main(String[] args) {
         
         int combustivel = 100;
