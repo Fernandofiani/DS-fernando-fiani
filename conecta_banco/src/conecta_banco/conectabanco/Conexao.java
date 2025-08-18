@@ -16,7 +16,7 @@ public class Conexao
 {
     public static void Conectabanco()
     {
-        String url = "jdbc:mysql://localhost:3306/conecta_banco";
+        String url = "jdbc:mysql://localhost:3306/conectabanco";
         String usuario = "root";
         String senha = "";
        
