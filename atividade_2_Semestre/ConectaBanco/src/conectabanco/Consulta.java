@@ -15,9 +15,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Consulta {
-
+   
+        
+   
     public static void Consultar_Dados() {
-        String url = "jdbc:mysql://localhost:3306/fat";
+        String url = "jdbc:mysql://localhost:3306/conectabanco";
         String usuario = "root";  // ou use variáveis: String usuario = ..., senha = ...
         String senha = "";
 
@@ -55,3 +57,4 @@ public class Consulta {
         }
     }
 }
+ 

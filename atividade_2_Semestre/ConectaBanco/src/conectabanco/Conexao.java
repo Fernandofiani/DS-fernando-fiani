@@ -16,7 +16,7 @@ public class Conexao
 {
     public static void Conectabanco()
     {
-        String url = "jdbc:mysql://localhost:3306/fat";
+        String url = "jdbc:mysql://localhost:3306/conecta_banco";
         String usuario = "root";
         String senha = "";
        
@@ -26,7 +26,7 @@ public class Conexao
 
             // Conecta ao banco
             Connection conexao = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/fat", usuario , senha
+                "jdbc:mysql://localhost:3306/conecta_banco", usuario , senha
             );
 
             System.out.println("Conexao realizada com sucesso!");
